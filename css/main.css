@@ -1,0 +1,15 @@
+.wrapper {
+	width: 92%;
+	height: 300px;
+	background-color: red;
+	margin-left: 4%;
+	margin-right: 4%;
+}
+
+.two_col {
+	width: 50%;
+	height: inherit;
+	background-color: #fafafa;
+	margin-left: 10px;
+	margin-right: 10px;
+}
