@@ -1,0 +1,64 @@
+* {
+	
+	-moz-box-sizing: border-box; 
+	-webkit-box-sizing: border-box; 
+	box-sizing: border-box;
+	
+}
+
+.row {
+	
+	width: 1280px;
+	max-width: 100%;
+	min-width: 768px;
+	margin: 0 auto;
+	
+}
+
+.row .row {
+	
+	width: auto; 
+	max-width: none; 
+	min-width: 0; 
+	margin: 0 -10px;
+	
+}
+
+.column {
+
+	float: left;
+	min-height: 1px;
+	padding: 0 .78125%;
+	position: relative;
+	
+}
+
+[class*="column"] + [class*="column"]:last-child { float: right;}
+
+[class*="column"] + [class*="column"].end { float: left;}
+
+.row .one { width: 6.25%;}
+.row .two { width: 12.5%;}
+.row .three { width: 18.75%;}
+.row .four { width: 25%;}
+.row .five { width: 31.25%;}
+.row .six { width: 38.5%;}
+.row .seven { width: 43.75%;}
+.row .eight { width: 50%;}
+.row .nine { width: 56.25%}
+.row .ten { width: 62.5%;}
+.row .eleven { width: 68.75%;}
+.row .twelve { width: 75%;}
+.row .thirteen { width: 81.25%;}
+.row .fourteen { width: 87.5%;}
+.row .fifteen { width: 93.75%;}
+.row .sixteen { width: 100%;}
+
+
+/* Nicholas Gallagher's micro clearfix */
+
+.row:before, .row:after, .clearfix:before, .clearfix:after { content:""; display: table;}
+
+.row:after, .clearfix:after { clear: both;}
+
+.row, .clearfix { zoom: 1;}
