@@ -1,4 +1,4 @@
-* {
+*, *:before, *:after {
 	
 	-moz-box-sizing: border-box; 
 	-webkit-box-sizing: border-box; 
@@ -6,11 +6,12 @@
 	
 }
 
+/* Grid HTML classes */
+
 .row {
 	
-	width: 1280px;
-	max-width: 100%;
-	min-width: 768px;
+	width: 100%;
+	max-width: 80em;
 	margin: 0 auto;
 	
 }
@@ -20,16 +21,17 @@
 	width: auto; 
 	max-width: none; 
 	min-width: 0; 
-	margin: 0 -10px;
+	margin: 0 -.625em;
 	
 }
 
 .column {
 
-	float: left;
-	min-height: 1px;
-	padding: 0 .78125%;
 	position: relative;
+	padding-left: .625em;
+	padding-right: .625em;
+	width: 100%;
+	float: left;
 	
 }
 
@@ -37,28 +39,102 @@
 
 [class*="column"] + [class*="column"].end { float: left;}
 
-.row .one { width: 6.25%;}
-.row .two { width: 12.5%;}
-.row .three { width: 18.75%;}
-.row .four { width: 25%;}
-.row .five { width: 31.25%;}
-.row .six { width: 38.5%;}
-.row .seven { width: 43.75%;}
-.row .eight { width: 50%;}
-.row .nine { width: 56.25%}
-.row .ten { width: 62.5%;}
-.row .eleven { width: 68.75%;}
-.row .twelve { width: 75%;}
-.row .thirteen { width: 81.25%;}
-.row .fourteen { width: 87.5%;}
-.row .fifteen { width: 93.75%;}
-.row .sixteen { width: 100%;}
+@media only screen and (min-width: 768px) {
 
+	.row .one { 
+		position: relative;
+		width: 6.25%;
+	}
+	
+	.row .two { 
+		position: relative;
+		width: 12.5%;
+	}
+	
+	.row .three { 
+		position: relative;
+		width: 18.75%;
+	}
+	
+	.row .four { 
+		position: relative;
+		width: 25%;
+	}
+	
+	.row .five { 
+		position: relative;
+		width: 31.25%;
+	}
+	
+	.row .six { 
+		position: relative;
+		width: 38.5%;
+	}
+	
+	.row .seven { 
+		position: relative;
+		width: 43.75%;
+	}
+	
+	.row .eight { 
+		position: relative;
+		width: 50%;
+		background-color: red;
+	}
+	
+	.row .nine { 
+		position: relative;
+		width: 56.25%
+	}
+	
+	.row .ten { 
+		position: relative;
+		width: 62.5%;
+	}
+	
+	.row .eleven { 
+		position: relative;
+		width: 68.75%;
+	}
+	
+	.row .twelve { 
+		position: relative;
+		width: 75%;
+	}
+	
+	.row .thirteen { 
+		position: relative;
+		width: 81.25%;
+	}
+	
+	.row .fourteen { 
+		position: relative;
+		width: 87.5%;
+	}
+	
+	.row .fifteen { 
+		position: relative;
+		width: 93.75%;
+	}
+	
+	.row .sixteen { 
+		position: relative;
+		width: 100%;
+		background-color: purple;
+	}
 
-/* Nicholas Gallagher's micro clearfix */
+}
 
-.row:before, .row:after, .clearfix:before, .clearfix:after { content:""; display: table;}
+@media only screen and (max-width: 767px) {
+	
+	.row .eight { 
+	
+		background-color: orange;
+	}
+		
+	.row .sixteen { 
+	
+		background-color: green;
+	}
 
-.row:after, .clearfix:after { clear: both;}
-
-.row, .clearfix { zoom: 1;}
+}
