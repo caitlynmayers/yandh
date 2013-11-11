@@ -70,6 +70,10 @@
 
 }
 
+html {
+	font-size: 100%;
+}
+
 body {
 	width: 100%;
 	margin: 0;
@@ -83,30 +87,24 @@ body {
 
 .orange {
 	background-color: #c36d16;
-	height: 25%;
+	height: 33%;
 	width: 100%;
 }
 
 .teal {
 	background-color: #00a1b0;
-	height: 25%;
+	height: 33%;
 	width: 100%;
 }
 
 .natural {
 	background-color: #f7e0a5;
-	height: 25%;
+	height: 33%;
 	width: 100%;
 }
 
 .maroon {
 	background-color: #653334;
-	height: 25%;
+	height: 33%;
 	width: 100%;
-}
-
-.tile  {
-	width: 100%
-	height: 100%;
-	
 }
