@@ -79,6 +79,41 @@ body {
 	margin: 0;
 	padding: 0;
 }
+/* Navigation styles */
+
+nav {  
+    height: 5em;  
+    width: 100%;   
+    font-size: 2em;  
+    font-family: 'Anaheim', Arial, sans-serif;  
+    font-weight: bold;  
+    position: relative;  
+    border-bottom: 1px solid #4D2728;  
+}  
+
+nav ul {    
+    margin: 0 auto;  
+    width: 80em;
+    height: 2.5em;   
+} 
+
+nav li {  
+	padding-top: .5em;
+    display: inline;  
+    float: left; 
+    text-transform: uppercase; 
+}
+
+nav a {  
+    color: #653334;  
+    display: inline-block;   
+    text-align: center;  
+    text-decoration: none;  
+    line-height: 40px;
+    padding: .5em;    
+}
+
+/* Swatch Styles */
 
 .swatches{
 	height: 100%;
@@ -87,24 +122,16 @@ body {
 
 .orange {
 	background-color: #c36d16;
-	height: 33%;
-	width: 100%;
 }
 
 .teal {
 	background-color: #00a1b0;
-	height: 33%;
-	width: 100%;
 }
 
 .natural {
 	background-color: #f7e0a5;
-	height: 33%;
-	width: 100%;
 }
 
 .maroon {
 	background-color: #653334;
-	height: 33%;
-	width: 100%;
 }
